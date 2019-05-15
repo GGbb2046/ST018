@@ -15,7 +15,7 @@
 2.  '*' for emphasis; '_' could also be used
 3.  '~' for strikethrough
 4. Listing
-5. Links [Subject](URL)
+5. Links - [Subject](URL)
 6. ![alt text](URL)
 7. `Backticks for highlights`
 8. Colon, Outpipe, dashes can be used to create tables
