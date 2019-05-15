@@ -1,0 +1,6 @@
+print(12.34)
+print(3.14)
+print("Hello World")
+print("My Name is")
+print(1+3)
+print(5-4)
