@@ -1,5 +1,6 @@
 # Galab Bista
 ![alt text](http://www.ace.edu.np/wp-content/uploads/2016/12/Galab-Bista-500x500.jpg)
+
 *Linked in profile* _(https://www.linkedin.com/in/galabbista)_
 **MS- Finance**
 _Expected graduation - Fall 2020_
