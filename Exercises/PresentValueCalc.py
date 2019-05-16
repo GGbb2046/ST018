@@ -1,0 +1,6 @@
+print("Welcome to the calculation of Present Value ")
+FV= float(input("Please enter the Future value ")) 
+R= float(input("Please enter the rate of return in % ")) 
+N= float(input("Please enter the time period ")) 
+PV= FV/((1+(R/100))**N)
+print("The present value", "is ", PV)
