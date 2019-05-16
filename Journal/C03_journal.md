@@ -46,7 +46,8 @@ e.g. 183 seconds to time(mm:ss):  183//60:: 183%60
 #Strings
 
 *You can use both single and double quotes provided you use the same symbol at the beginning and at the end*
-~Variables~
+
+#Variables
 1. Variables can be letters, numbers and underscores
 2. Variables cannot start with a number
 3. Spaces are not allowed in variable names
