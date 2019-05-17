@@ -33,14 +33,15 @@
 *This enables to commit and stage and push it to server*
 17.	Git add …or create a new repository on the command line
 18. echo "# c02ex02" >> README.md
-19. git init
-    1.  git add README.md
-    2.  git commit -m "first commit"
-    3.  git remote add origin https:/github.com/GGbb2046/c02ex02.git
-    4.  git push -u origin master
-    5.  …or push an existing repository from the command line
-    6. git remote add origin https://github.com/GGbb2046/c02ex02.git
-    7. git push -u origin master
+19. ## To initiate and move forward with local repos
+    1. git init
+    2.  git add README.md
+    3.  git commit -m "first commit"
+    4.  git remote add origin https:/github.com/GGbb2046/c02ex02.git
+    5.  git push -u origin master
+    6.  …or push an existing repository from the command line
+    7. git remote add origin https://github.com/GGbb2046/c02ex02.git
+    8. git push -u origin master
     
 
 # Shift + Alt – multiple cursor
