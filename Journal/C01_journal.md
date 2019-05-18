@@ -1,3 +1,4 @@
+# Class notes_01
 1. **Batch prompt** – an advanced form of command prompt.
 2. **Assembler** is the lowest level of language that talks directly to the CPU (sets of pneumonic to talk directly to computer)
 3. **Trade off** – do anything with low level language vs detail instructions too complex

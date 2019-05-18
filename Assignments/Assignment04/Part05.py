@@ -1,9 +1,6 @@
 import turtle
 def draw_monogram(gal):
-    start_x = gal.xcor()
-    start_y = gal.ycor()
-    start_heading = gal.heading()
-
+    
     #draw a G
     gal.fd(50)
     gal.rt(90)
@@ -42,23 +39,28 @@ def draw_monogram(gal):
     gal.rt(90)
     gal.fd(75)
 
-    gal.setx(start_x)
-    gal.sety(start_y)
-    gal.setheading(start_heading)
+    
     return
 
 sandbox = turtle.Screen()
 sandbox.bgcolor('black')
 marker = turtle.Turtle()
 marker.pensize(2)
-marker.speed(100)
+marker.speed(0)
 
 colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
-for i in range(18):
+for i in range(200):
         marker.pencolor(colors[i % 6])
         draw_monogram(marker)
-        marker.left(20)
-        marker.forward(10)
+        marker.left(1)
+        marker.penup()
+        marker.fd(50)
+        marker.pd()
+        marker.forward(50)
+        marker.penup()
+        marker.fd(150)
+        marker.pd()
+        marker.forward(40)
 marker.hideturtle()
 sandbox.mainloop()
 
