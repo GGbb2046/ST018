@@ -24,16 +24,14 @@ for i in t:
             print("It is an optimum temperature for squirrels to come out and play at ",i, "F be it any season")
             break
         
-        else:
-                
-                    
+        else:                                  
                     for j in s:
                     
                         if j=='in summer':
                             print("The temperature is optimum at ",i ,"F", j,"so the squirrels are playing.")
-                            break
+                            
                         else:
                             print("It is too hot at ",i ,"F ", j, "so the squirrels are not playing.")
                             break
-                        
+                       
         break
