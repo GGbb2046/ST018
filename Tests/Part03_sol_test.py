@@ -1,9 +1,10 @@
 #creating a list of possible temperature ranges 
 t=[50,55,59,60,70,80,90,91,100,101,110]
 
-#creating a lsit of boolean for presence or absence of summer
+#creating a list of boolean for presence or absence of summer
 s=["in summer", "not in summer"]
 
+#displaying the list of temperature and boolean ranges
 print("We have used the following temperature range for testing the program\n")
 for i in t:
     print (i, end= "  ")
