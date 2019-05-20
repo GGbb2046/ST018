@@ -1,8 +1,8 @@
-#creating a tuple of possible temperature ranges 
-t=(50,55,59,60,70,80,90,91,100,101,110)
+#creating a list of possible temperature ranges 
+t=[50,55,59,60,70,80,90,91,100,101,110]
 
-#creating a tuple of boolean for presence or absence of summer
-s=("in summer", "not in summer")
+#creating a lsit of boolean for presence or absence of summer
+s=["in summer", "not in summer"]
 
 print("We have used the following temperature range for testing the program\n")
 for i in t:

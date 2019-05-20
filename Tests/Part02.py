@@ -1,18 +1,21 @@
 p=[x for x in range(2, 2000) if all(x % y != 0 for y in range(2, x))] 
 
-while True:
+y=int(input("Please enter a number: "))
 
-    y=int(input("Please enter a number between 2 and 2000 "))
-    
+while True:
+ 
     if y in p:
-        print("You have entered a prime number")
+        print("The number", y, "is prime.")
     
     elif y<2:
-        print("You have chosen to exit the program. Have a great day!")
+        print("This terminates our session. Have a nice day.")
         break
     
     else: 
-        print("The number you entered is not prime")
+        print("The number",y, "is not prime")
+        
+    y=int(input("Please enter another number: "))
+        
 
     
 
