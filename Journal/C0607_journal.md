@@ -89,3 +89,11 @@ Print(L2)  [9,10,11,12]
 7. Structured text file manifest in the form of json or csv file. 
     CSV files are skeletal files without any formatting or flavor and just contain the raw data. Remember to call upon csv module when dealing with csv files.
     
+# Few notes to surmise
+
+1. Seek and tell can be used to place and identify the location.
+2. Parsing – read the text and decision based on the text file.
+3. Any tuples would be converted to list while using the Json structure.
+4. Pickle saves just one data structures while shelf has capability of multiple data structures.
+5. Multiple files are created using shelfie, we just would need to be worried about – only .dat file
+6. When i call a csv file, a list within a list is generated and i have to make sure that i am fetching the right data.
