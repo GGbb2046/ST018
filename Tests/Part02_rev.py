@@ -11,11 +11,15 @@ while True:
         print("This terminates our session. Have a nice day.")
         break
     
+    elif y>2000:
+        print("You have entered a number that is greater than 2000.")
+    
     else: 
         print("The number",y, "is not prime")
         
     y=int(input("Please enter another number: "))
         
+
 
     
 
