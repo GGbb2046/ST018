@@ -84,3 +84,7 @@ Print(L2)  [9,10,11,12]
 2. Binary files are not meant to be read directly on screen. While creating a json output, we will get to know one of the binary file.
 3. Using with statement drops the requirement for closing the file. it's good to bring it into practice.
 4. We would need to specify the location of the file that sits on another directory to call in for reading, writing or append purposes.
+5. Please remember that while calling command line arguments - start with the python then your program name and the arguments without any parenthesis separated by a space.
+6. Binary files saves proprietary data - example dll files of windows when trying to open them using text editor.
+7. Structured text file manifest in the form of json or csv file. 
+    CSV files are skeletal files without any formatting or flavor and just contain the raw data. Remember to call upon csv module when dealing with csv files.
