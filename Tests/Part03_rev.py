@@ -14,6 +14,7 @@ def squirrelplay(t,s):
 
 #main program
 print("\n")
+print("True implies squirrel play and False implies squirrel do not play. \n")    
 print("testing for is_summer at different temperatures \n")
 print(squirrelplay(59,"is_summer")) #should print Flase
 print(squirrelplay(60,"is_summer")) #should print True

@@ -1,6 +1,6 @@
 p=[x for x in range(2, 2000) if all(x % y != 0 for y in range(2, x))] 
 
-y=int(input("Please enter a number: "))
+y=int(input("Please enter a number between 2 and 2000: "))
 
 while True:
  
