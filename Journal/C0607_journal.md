@@ -88,3 +88,4 @@ Print(L2)  [9,10,11,12]
 6. Binary files saves proprietary data - example dll files of windows when trying to open them using text editor.
 7. Structured text file manifest in the form of json or csv file. 
     CSV files are skeletal files without any formatting or flavor and just contain the raw data. Remember to call upon csv module when dealing with csv files.
+    
