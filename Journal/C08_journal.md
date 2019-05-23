@@ -1,11 +1,10 @@
-# _Revision: Notes to class 0607_
-## Example 1 
+# __Revision: Notes to class 0607__
+### __Example 1__ 
 S1 = “hello”
 
 S1 =S1.upper()
 
-## _Comparison for case upper:_
-__galab__ 
+### __Comparison for case upper:__
 
 S=input(“enter a word exit to exit”) 
 
@@ -13,7 +12,7 @@ If s.upper() == ”exit”
 
 break
 
-## Slicing
+### __Slicing__
 
 S = input(“enter a word”)
 
@@ -21,25 +20,26 @@ If len(s) >1:
 
 Print (s[1])
 
-### use pass if you want to do nothing after else
+### _use pass if you want to do nothing after else_
 
-## Please visualize the data before passing command
+### __Please visualize the data before passing command__
 
 s = [ [ “Hello”]]
 
 Print (s[0][0][0])
 
-# Example 2
+### __Example 2__
 
 s = [ {“first”:[“hello”]}]
 
 Print (s[0][“first”][0][0])  “H”
 
-## java script don’t have tuples
-## Jason and text files are the two type of files we will handle. Shelf files are more proprietary.
-## a and w creates new files
+__Few notes__
+1. java script don’t have tuples
+2. Jason and text files are the two type of files we will handle. Shelf files are more proprietary.
+3.  a and w creates new files
 
-# Example 3
+### __Example 3__
 
 With open (“input.txt”) as fin:  opening for reading
 
@@ -51,13 +51,13 @@ With open(“output.txt”, ‘w’) as fout:
 
 fout.write(S)
 
-# serializing and deserializing
+## __Serializing and Deserializing__
 
 {“first”: “Hello”}
 
-Import json
+import json
 
-With open(“input.txt”, ‘r’) as fin:
+with open(“input.txt”, ‘r’) as fin:
 
 data=json.load(fin)
 
@@ -67,11 +67,11 @@ with open(“output.txt”, ‘w’) as fout:
 
 json.dump(data, fout)
 
+## __Things to consider__
+1. use json and create a list.
+2. try solving the assignment 05 part 02 problem with a different approach
 
-### use json and create a list.
-### try solving the assignment 05 part 02 problem with a different approach
-
-# API’s
+# __API’s__
 Making calls to web API. It is a way to access service to get various data back.
 1.	https://www. Timcsmith.com/my-api?first_arg=’Tim’&second_arg=”emith”
 2.	protocol – https					Get request
@@ -81,9 +81,9 @@ Making calls to web API. It is a way to access service to get various data back.
 6.	PIP, anaconda are some of the way to install a package.
 7.	Conda install requests
 8.	Press shift alt F to wrap text
-9.	Loads  accepts a string unlike load which loads a file
-# quandro  is a service which has a package.
+9.	Loads accepts a string unlike load which loads a file
+10. quandro  is a service which has a package.
 
-## Things to cover in next class:
+## __Things to cover in next class:__
 Exception handling 
 Tools to look at the software: static and dynamic analysis.
