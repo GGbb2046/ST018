@@ -16,6 +16,7 @@
 13.	Please note that the cell should be in a chronological order.
 14.	Do not use the jupyter notebook inside the vs code
 15.	Panda is a library that is usually used with jupyter
+![Please refer to this site for additional Jupyter commands and shortcuts](https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/pdf/)
     1. 	3 key data structure
         1. Series – one dimensional data structure
         2. Data frame – 2-dimensional data structure
