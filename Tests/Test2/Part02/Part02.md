@@ -1,0 +1,1 @@
+This program will enable fetching of financial data from one of the financial api's, convert the data into a json structure, perform analysis and spit results of the analysis in a json format which is driven by a command line argument.
