@@ -1,1 +1,2 @@
 This program will enable fetching of financial data from one of the financial api's, convert the data into a json structure, perform analysis and spit results of the analysis in a json format which is driven by a command line argument.
+The user may be able to either check the current exchange rate and fetch the amount of domestic currency we could exchange for a foreign currency with the spread information.

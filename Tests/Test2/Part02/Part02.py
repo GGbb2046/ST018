@@ -15,7 +15,7 @@ if len(sys.argv)==1:
     
 
 elif len(sys.argv)>2:
-    print("Please retry entering a single argument follwing the program name.\n")
+    print("You have entered multiple arguments. Please retry entering a single argument follwing the program name.\n")
     print(tab)
 
 else:
@@ -28,8 +28,8 @@ else:
             print(t,"\n")
             dc=input("Please input your domestic currency ticker in the list provided above or any other of your choice: ")
             fc = input("Please input your foreign currency ticker in the list provided above or any other of your choice: ")
-            a= int(input("The amount of "+dc + " you want to exchange for "+fc+": "))
-            if dc==0 or fc ==0 or a!=float(a):
+            a= input("The amount of "+dc + " you want to exchange for "+fc+": ")
+            if dc==0 or fc ==0 or a==0:
                 print("Please enter valid input.")
             else:
                 c='CURRENCY_EXCHANGE_RATE'
@@ -45,18 +45,24 @@ else:
                 else: 
                     parsed_json = json.loads(json_string)
                     #print(parsed_json)
-                    bidr = parsed_json['Realtime Currency Exchange Rate']['8. Bid Price']
-                    br = round(float(bidr),4)
-                    t = int(br*a)
-                    print("The amount you will receive upon exchange is {:,} ".format(t) +  fc)
-                    break
+                    try:
+                        bidr = parsed_json['Realtime Currency Exchange Rate']['8. Bid Price']
+                        askr = parsed_json['Realtime Currency Exchange Rate']['9. Ask Price']
+                        br = round(float(bidr),4)
+                        ar = round(float(askr),4)
+                        sp = round((ar-br),4)
+                        t = int(br*round(float(a),2))
+                    except:
+                        print("You have entered invalid arguments. Please retry entering valid arguments")
+
+                    else:
+                    
+                        print("The amount you will receive upon exchange is {:,} ".format(t) +  fc)
+                        print("The quoted spread on the exchange is {:.4f} ".format(sp))
+                        break
 
         elif sys.argv[1] == '-s':
             print("work under progress")
-            break
-
-        elif sys.argv[1].lower() == '-e':
-            print("Have a good day!")
             break
 
         else:
