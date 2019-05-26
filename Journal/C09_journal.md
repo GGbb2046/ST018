@@ -76,5 +76,6 @@
 2. Conda update jupyter
 3. ZACKS/SERV – is a service that handles major published financial data.
 4. Qopts is creating a dictionary which contains the list of items
-5.	Panda data frames allows the use of ‘.’ Instead of []
-
+5.  Panda data frames allows the use of ‘.’ Instead of []
+6. [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.10-customizing-ticks.html)
+7. [Descriptive](https://www.math.ubc.ca/~pwalls/math-python/scipy/matplotlib/)

@@ -3,7 +3,7 @@ import requests
 import json
 from astropy.table import Table, Column
 import numpy as np
-
+import matplotlib.pyplot as plt
 
 Requirement = ['Currency Converter', 'Stock Info'] 
 Argument = ['-c', '-s']
@@ -76,12 +76,25 @@ else:
                 print("The API is currently unavailable. Please try again in a few minutes. ")
                 break
             else: 
-                # sd= input("Please enter the starting date in mm/dd/yy format: ")
-                # ed= input("Please enter the ending date in mm/dd/yy format: ")
                 parsed_json = json.loads(json_string)
                 # print(parsed_json)
-                data = parsed_json['Time Series (Daily)'].keys()
-                print(data)
+                try:
+                    date = [date for date in parsed_json['Time Series (Daily)'].keys()]
+                    list.reverse(date)
+                    dict2 = {x:parsed_json['Time Series (Daily)'][x]['4. close'] for x in date}
+                    print("The current price of stock "+s+" is "+ dict2[parsed_json['Meta Data']['3. Last Refreshed']])
+                    x = dict2.keys()
+                    y = [float(y) for y in list(dict2.values())]
+                    plt.plot(x,y,color ='green', marker = '.')
+                    plt.gca().yaxis.set_major_locator(plt.AutoLocator())
+                    plt.gca().xaxis.set_major_locator(plt.AutoLocator())
+                    plt.xlabel('Time')
+                    plt.ylabel('Price')
+                    plt.show()
+                except:
+                    print("You have entered an invalid ticker for your chosen stock.")
+
+
                 break
 
         else:
