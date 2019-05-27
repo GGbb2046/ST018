@@ -17,7 +17,7 @@ if len(sys.argv)==1:# Informing user that they have to input an argument to proc
     
 
 elif len(sys.argv)>2: # Informing the user that they have entered too many arguments
-    print("You have entered multiple arguments. Please retry entering a single argument follwing the program name.\n")
+    print("You have entered multiple arguments. Please retry entering a single argument following the program name.\n")
     print(tab)
 
 else:
@@ -103,7 +103,10 @@ else:
                     plt.gca().xaxis.set_major_locator(plt.LinearLocator())
                     plt.xlabel('Time')# setting the labels for the axes
                     plt.ylabel('Price')
+                    plt.title(s.upper())
+                    print("Please refer to the new window that has opened just now for the time series plot.\n")
                     plt.show()
+                    print("Have a nice day!")
                 except:
                     print("You have entered an invalid ticker for your chosen stock.")#exception throw that the user has input an invalid ticker.
 
